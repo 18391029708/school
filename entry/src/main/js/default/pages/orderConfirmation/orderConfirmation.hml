@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="orderInfo">
+        <text>选择车手性别</text>
+        <text class="title"> 起点：{{startPoint}}</text>
+        <text class="title">终点：{{endPoint}}</text>
+        <text class="title">订单金额：{{payAmount}}}</text>
+        <button>确认支付</button>
+    </div>
+
+</div>

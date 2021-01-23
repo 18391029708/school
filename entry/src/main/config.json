@@ -1,0 +1,79 @@
+{
+  "app": {
+    "bundleName": "com.example.shundaschool",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "reqPermissions": [
+    {
+      "name": "ohos.permission.LOCATION"
+    }
+  ],
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.shundaschool",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone",
+      "tv"
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.LOCATION"
+      }
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.shundaschool.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "ShunDaSchool",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.example.shundaschool.LocationAbility",
+        "icon": "$media:icon",
+        "description": "$string:locationability_description",
+        "type": "service"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/homePage/homePage",
+          "pages/orderConfirmation/orderConfirmation",
+          "pages/Map/Map"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}

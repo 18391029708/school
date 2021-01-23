@@ -1,0 +1,64 @@
+<div class="container">
+    <tabs class = "tabs" index="0" vertical="false" onchange="change">
+        <tab-content>
+            <div class="item-content" >
+                <div class="slideshow">
+                    <swiper autoplay="true" interval="2000" indicator="true" loop="true">
+                        <image src="{{$item}}" for="{{imageList}}"></image>
+                    </swiper>
+                </div>
+                <div class="lost_confession">
+                    <div class="confession">
+                        <text>告白墙</text>
+                    </div>
+                    <div class="lost">
+                        <text>失物招领</text>
+                    </div>
+                </div>
+                <div class="byCar">
+                    <div class="byCar_item"onclick="driver">
+                        <stack>
+                            <image src="/common/school.png"></image>
+                            <text class="car_text">电车搭乘</text>
+                        </stack>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content">
+                <text>er</text>
+            </div>
+
+            <div class="item-content">
+                <text>ert</text>
+            </div>
+        </tab-content>
+
+        <tab-bar class="tab-bar" mode="fixed">
+            <div class="navigationBar" >
+                <div class="img">
+                    <image class="img_style" src="/common/home.png"></image>
+                </div>
+                <div class="textArea">
+                    <text class="tab-text">Home</text>
+                </div>
+            </div>
+            <div class="navigationBar">
+                <div class="img">
+                    <image class="img_style"src="/common/order.png"></image>
+                </div>
+                <div class="textArea">
+                    <text class="tab-text">Index</text>
+                </div>
+            </div>
+            <div class="navigationBar">
+                <div class="img">
+                    <image class="img_style" src="/common/personal.png"></image>
+                </div>
+                <div class="textArea">
+                    <text class="tab-text">Detail</text>
+                </div>
+            </div>
+        </tab-bar>
+    </tabs>
+</div>

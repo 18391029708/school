@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(#FF69B4 ,#E1FFFF);
+}
+.btn-div {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.txt {
+    color: #000000;
+    font-weight: bold;
+    font-size: 39px;
+}
+.dialog-main {
+    width:90%;
+    height: 100%;
+    height: 400px;
+
+}
+.dialog-div {
+    flex-direction: column;
+/*    height: 100%;*/
+    align-items: center;
+    background-color:#E1FFFF ;
+}
+.inner-txt {
+    width:80%;
+    height: 160px;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-around;
+}

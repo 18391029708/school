@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="btn-div">
+
+
+        <button type="capsule" value="获取位置信息" class="btn" onclick="showDialog"></button>
+    </div>
+    <dialog id="simpledialog" class="dialog-main" oncancel="cancelDialog">
+<!--        <div class="dialog-div">-->
+<!--            <div class="inner-txt">-->
+<!--                <input placeholder="起点" onchange="startPoint"/>-->
+<!--            </div>-->
+<!--            <div class="inner-txt">-->
+<!--                <input placeholder="终点" onchange="endPosition" ></input>-->
+<!--            </div>-->
+<!--           <button onclick="routeTo" value="确认" ></button>-->
+<!--        </div>-->
+
+        <div style="display: flex; flex-direction: column;">
+            <text>经度：{{latitude}}</text>
+            <text>纬度：{{longitude}}</text>
+            <div >
+                <button onclick="aa" value="查看位置"></button>
+            </div>
+        </div>
+
+
+    </dialog>
+
+</div>
