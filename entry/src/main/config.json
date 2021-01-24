@@ -50,7 +50,7 @@
         "name": "com.example.shundaschool.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "ShunDaSchool",
+        "label": "顺哒校园",
         "type": "page",
         "launchType": "standard"
       },

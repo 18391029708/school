@@ -21,6 +21,7 @@
             <div >
                 <button onclick="aa" value="查看位置"></button>
             </div>
+            <text>位置：{{address}}</text>
         </div>
 
 

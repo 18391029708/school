@@ -10,9 +10,12 @@ import regeneratorRuntime from '@babel/runtime/regenerator';
 export default {
     data:{
     latitude:"",
-    longitude:""
+    longitude:"",
+        address:""
     },
     onInit(){
+       var T = typeof(this.latitude);
+        console.info("T:" + T);
 
     },
 
@@ -25,6 +28,7 @@ export default {
 
             success: function(data) {
                 console.info('success get location data. latitude:' + data.latitude);
+                console.info("latitude类型：" + typeof(data.latitude))
                 that.$set("latitude",data.latitude)
                 that.$set("longitude",data.longitude)
                 console.info("经度" + that.latitude);
@@ -63,27 +67,22 @@ export default {
         console.info(1)
     },
     aa:async function (){
-    console.info("我执行了")
+//    console.info("我执行了")
         var actionData = {};
         actionData.longitude = this.longitude;
         actionData.latitude = this.latitude;
-
                 var action = {};
-    action.data = actionData;
+                action.data = actionData;
                 action.bundleName = 'com.example.shundaschool';
                 action.abilityName = 'com.example.shundaschool.LocationAbility';
                 action.messageCode = 666;
                 action.abilityType = 1;
                 action.syncOption = 1;
-
-
-
                 var result = await FeatureAbility.callAbility(action);
                 var ret = JSON.parse(result);
                 console.info("00000" + ret);
                 console.info("0022" + JSON.stringify(ret.abilityResult));
-
-
+                this.$set("address",JSON.stringify(ret.abilityResult))
     },
     onShow(){
 
